@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
-const individualSchema = new schema({
+const individualSchema = new mongoose.Schema({
    
     name:{
         type:String
@@ -34,4 +34,4 @@ const individualSchema = new schema({
         type:String
     }
 })
-module.exports = mongoose.model('LookingIndividuals', indvidualSchema);
+module.exports = mongoose.model('lookingindividuals', individualSchema);
