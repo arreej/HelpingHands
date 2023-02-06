@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
   res.send('No Users Found');
 });
 
-router.get('/get/:id', function(req, res, next) {
-    res.send('No ID Found');
-});
+// router.get('/get/:id', function(req, res, next) {
+//     res.send('No ID Found');
+// });
 
 router.get('/getall', function(req, res, next) {
     const data = Model.find();
