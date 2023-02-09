@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar'
+import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom'
+import {DataProvider} from './GlobalState'
+import Header from './components/headers/Header'
+import MainPages from './components/mainpages/Pages'
 
-const App = () => {
+
+function App() {
   return (
-    <Router>
-      <div>
-        <Route component={Navbar} exact path="/" />
-      </div>
-    </Router>
-  )
+    <DataProvider>
+      <Router>
+        <div className="App">
+          <Header />
+          <MainPages />
+        </div>
+      </Router>
+    </DataProvider>
+  );
 }
 
 export default App;

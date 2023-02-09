@@ -1,6 +1,4 @@
-.container {
+.App {
   text-align: center;
-}
-.container > h1 {
-  color: steelblue;
+  color: blue;
 }
